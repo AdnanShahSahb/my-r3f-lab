@@ -1,7 +1,8 @@
 import './style.css'
 import ReactDOM from 'react-dom/client'
 import { Canvas } from '@react-three/fiber'
-import Experience from './Experience.jsx'
+import Experience from './_61_portalscene/Experience.jsx'
+import PortfolioExperience from "./_64_portfolio/PortfolioExperience.jsx"
 
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
@@ -15,6 +16,7 @@ root.render(
             position: [1, 2, 6]
         }}
     >
-        <Experience />
+        {/* <Experience /> */}
+        <PortfolioExperience/>
     </Canvas>
 )
