@@ -83,26 +83,26 @@ export default function Interface() {
                 <div className="controls">
 
                     <div className="raw">
-                        <div className="key"
+                        <div className={ `key ${ forward ? 'active' : '' }` }
 
                             {...hold(setForward)}
                         />
                     </div>
 
                     <div className="raw">
-                        <div className="key"
+                        <div className={ `key ${ leftward ? 'active' : '' }` }
                             {...hold(setLeftward)}
                         />
-                        <div className="key"
+                        <div className={ `key ${ backward ? 'active' : '' }` }
                             {...hold(setBackward)}
                         />
-                        <div className="key"
+                        <div className={ `key ${ rightward ? 'active' : '' }` }
                             {...hold(setRightward)}
                         />
                     </div>
 
                     <div className="raw">
-                        <div className="key large"
+                        <div className={ `key large ${ jump ? 'active' : '' }` }
                             {...hold(setJump)}
                         />
                     </div>
